@@ -18,3 +18,7 @@ spec:
         name: guestbook-ui
         ports:
         - containerPort: 80
+      - image: amankinenko/ks-guestbook-demo:0.1
+        name: guestbook-ui-0.1
+        ports:
+        - containerPort: 1337
