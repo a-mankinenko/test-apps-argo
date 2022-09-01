@@ -23,10 +23,11 @@ spec:
         - name: www
           mountPath: /usr/share/nginx/html
           
-      - name: test
-        image: alpine
-        command: ["/bin/sh"]
-        args: ["sleep 1000"]
+      - name: ubuntu
+        image: ubuntu:latest
+        command: [ "/bin/bash", "-c", "--" ]
+        args: [ "while true; do sleep 30; done;" ]
+        
       volumes:
       - name: www
         persistentVolumeClaim:
