@@ -3,6 +3,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: myclaim
 spec:
+  volumeName: web-persistent-volume
   accessModes:
     - ReadWriteMany
   resources:
