@@ -24,7 +24,7 @@ spec:
           mountPath: /usr/share/nginx/html
           
       - name: test
-        image: nginx:stable-alpine
+        image: alpine
       volumes:
       - name: www
         persistentVolumeClaim:
