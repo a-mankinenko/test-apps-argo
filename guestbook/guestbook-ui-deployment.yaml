@@ -1,6 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  version: 1.0.1
   name: guestbook-ui
   namespace: guestbook
 
