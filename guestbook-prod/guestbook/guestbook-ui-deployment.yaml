@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: guestbook-ui
-  namespace: guestbook-prod
+  namespace: guestbook
 spec:
   replicas: 1
   revisionHistoryLimit: 3
@@ -15,7 +15,7 @@ spec:
         app: guestbook-ui
     spec:
       containers:
-      - image: amankinenko/ks-guestbook-demo:0.1
-        name: guestbook-ui
-        ports:
-        - containerPort: 80
+        - image: amankinenko/ks-guestbook-demo:0.5
+          name: guestbook-ui
+          ports:
+            - containerPort: 80
