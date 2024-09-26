@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: guestbook-ui
+  name: guestbook-ui-test
 
 spec:
   replicas: 1
@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - image: amankinenko/ks-guestbook-demo:latest
-        name: guestbook-ui
+        name: guestbook-ui-test
         ports:
         - containerPort: 80
