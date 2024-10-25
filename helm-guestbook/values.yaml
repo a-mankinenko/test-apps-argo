@@ -1,8 +1,8 @@
-# Default values for helm-guestbook.
+lt# Default values for helm-guestbook.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 replicaCount: 1
-namespace: guestbook
+namespace: default
 image:
   repository: amankinenko/ks-guestbook-demo
   tag: 0.5
