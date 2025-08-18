@@ -13,5 +13,7 @@ ingress:
   hosts:
     - chart-example.local
 
+dummyUnUsed: test
+
 
 
